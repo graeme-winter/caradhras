@@ -1,7 +1,7 @@
 import os
 import zmq
 
-host = "ws448.diamond.ac.uk"
+host = "i24-ppu01.diamond.ac.uk"
 port = 4242
 
 context = zmq.Context()
