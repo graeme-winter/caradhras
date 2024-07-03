@@ -21,3 +21,7 @@ python3 sink.py source-host-name
 ```
 
 Which will fetch the files and write them locally with the full filename they were delivered with.
+
+## Operation
+
+N.B. at the moment this is a copy not a move: it needs to remove the files at the source end otherwise they will keep getting sent, and the source end also needs a `while` loop to keep sending files.
