@@ -1,4 +1,5 @@
 import os
+import time
 import zmq
 
 host = "*"
@@ -16,5 +17,6 @@ def walker(directory="."):
             print(filename)
             socket.send_multipart([filename.encode(), open(filename, "rb").read()])
 
-
-walker()
+while True:
+    time.sleep(0.1)
+    walker()
